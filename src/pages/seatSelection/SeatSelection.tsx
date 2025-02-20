@@ -35,18 +35,23 @@ const SeatSelection: React.FC = () => {
 
     }, [selectedSeats])
 
-    const getTierColor = (row:number) => {
+    const getTierColor = (row: number) => {
         if (row < 2) return 'bg-gray-200';
         if (row < 5) return 'bg-yellow-100';
         return 'bg-purple-100';
     };
 
     const handleSeatClick = (seatId: string) => {
-        if (selectedSeats.includes(seatId)) {
-            setSelectedSeats(selectedSeats.filter(seat => seat !== seatId))
+        if (selectedSeats.length <= 8) {
+            if (selectedSeats.includes(seatId)) {
+                setSelectedSeats(selectedSeats.filter(seat => seat !== seatId))
+            } else {
+                setSelectedSeats([...selectedSeats, seatId])
+            }
         } else {
-            setSelectedSeats([...selectedSeats, seatId])
+            alert('You can only book 8 tickets at a time')
         }
+
     }
 
     const handleBuyTicket = () => {
