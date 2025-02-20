@@ -10,7 +10,7 @@ interface MovieProps {
 
 const MovieCard: React.FC<MovieProps> = ({ id, title, poster, year, onClick }) => {
     return (
-        <div key={id} className="bg-white border rounded-lg shadow-lg overflow-hidden" onClick={onClick}>
+        <div key={id} className="bg-white border rounded-lg shadow-lg overflow-hidden " onClick={onClick}>
             <figure className="relative">
                 <img src={poster} alt={title} className="w-full h-64 object-cover" />
                 <figcaption className="absolute bottom-0 left-0 p-4 bg-gradient-to-t from-black to-transparent text-white">

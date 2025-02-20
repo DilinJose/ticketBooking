@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router'
-import { RootState } from '../../redux/store/store'
+import { AppDispatch, RootState } from '../../redux/store/store'
 import { getMovieDetails } from '../../redux/slice/movieSlice'
 import data from "../../../data.json"
 import { getCurrentDate, getNextDate } from '../../utils/convert/datetime'
@@ -11,11 +11,10 @@ import Body from '../../components/layout/body'
 
 const BookTickets: React.FC = () => {
     const { id } = useParams()
-    const dispatch = useDispatch()
+    const dispatch = useDispatch<AppDispatch>()
     const navigate = useNavigate()
     const [selectedDate, setSelectedDate] = useState("")
-    // const movieDetails = useSelector((state: RootState) => state.movies.movieDetails)
-    const movieDetails = data.details
+    const movieDetails = useSelector((state: RootState) => state.movies.movieDetails)
 
     const dates = [getCurrentDate(), getNextDate()]
 
@@ -32,7 +31,7 @@ const BookTickets: React.FC = () => {
     const handleBookingTime = (time: string) => {
         const payload = {
             id,
-            tilte: movieDetails.title,
+            tilte: movieDetails?.title ?? "",
             date: selectedDate,
             time
         }
@@ -68,16 +67,16 @@ const BookTickets: React.FC = () => {
                     }
                 </div>
                 <div className='p-5'>
-                    <h2 className='text-2xl font-medium my-2'>Available Shows</h2>
-                    <div className='flex items-center justify-start gap-3'>
-                        {
-                            data.timings.map(time => (
-                                <div className='border bg-slate-700 text-white p-3 rounded-lg flex items-center justify-center flex-col' onClick={() => handleBookingTime(time)}>
-                                    {time}
-                                </div>
-                            ))
-                        }
-                    </div>
+                    {selectedDate && (<><h2 className='text-2xl font-medium my-2'>Available Shows</h2>
+                        <div className='flex items-center justify-start gap-3'>
+                            {
+                                data.timings.map(time => (
+                                    <div className='border bg-slate-300 hover:bg-slate-600 text-white p-3 rounded-lg flex items-center justify-center flex-col' onClick={() => handleBookingTime(time)}>
+                                        {time}
+                                    </div>
+                                ))
+                            }
+                        </div></>)}
                 </div>
             </div>
 

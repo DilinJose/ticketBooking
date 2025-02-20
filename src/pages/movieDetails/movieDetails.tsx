@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
-import data from "../../../data.json"
 import { useDispatch, useSelector } from 'react-redux'
-import { RootState } from '../../redux/store/store'
+import { AppDispatch, RootState } from '../../redux/store/store'
 import { useNavigate, useParams } from 'react-router'
 import { getMovieDetails } from '../../redux/slice/movieSlice'
 import routers from '../../utils/common/routers'
@@ -10,10 +9,10 @@ import Body from '../../components/layout/body'
 
 const MovieDetails: React.FC = () => {
     const { id } = useParams()
-    const dispatch = useDispatch()
+    const dispatch = useDispatch<AppDispatch>()
     const navigate = useNavigate()
-    // const movieDetails = useSelector((state: RootState) => state.movies.movieDetails)
-    const movieDetails = data.details
+    const movieDetails = useSelector((state: RootState) => state.movies.movieDetails)
+    // const movieDetails = data.details
 
 
     useEffect(() => {

@@ -6,16 +6,24 @@ export interface BookingDetailsProps {
     time?: string;
     seatLayout?: string[];
     total?: number;
+    title?: string;
 }
 export interface BookingProps {
-    bookingDetails: BookingDetailsProps | object;
+    bookingDetails: BookingDetailsProps;
     isLoaded: boolean;
     error: string | null
 }
 
 
 const initialState: BookingProps = {
-    bookingDetails: {},
+    bookingDetails: {
+        id: "",
+        date: "",
+        time: "",
+        seatLayout: [],
+        total: 0,
+        title: ""
+    },
     isLoaded: false,
     error: null,
 };

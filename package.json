@@ -15,9 +15,11 @@
     "@tanstack/react-query": "^5.66.6",
     "axios": "^1.7.9",
     "react": "^19.0.0",
+    "react-confetti": "^6.2.2",
     "react-dom": "^19.0.0",
     "react-redux": "^9.2.0",
     "react-router": "^7.2.0",
+    "react-use": "^17.6.0",
     "tailwindcss": "^4.0.6"
   },
   "devDependencies": {
