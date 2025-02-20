@@ -1,0 +1,115 @@
+{
+    "Search": [
+        {
+            "title": "Everything Everywhere All at Once",
+            "year": "2022",
+            "id": "tt6710474",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "All Quiet on the Western Front",
+            "year": "2022",
+            "id": "tt1016150",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOWJiYWMyYTktZThhOS00ZjgxLWE0YTQtZDMyNTQxMjMyYjI2XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "The Devil All the Time",
+            "year": "2020",
+            "id": "tt7395114",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BYmExOWUxZDMtZmM1ZS00NjQ4LWEwODAtY2E0N2Y1Y2MzZTkwXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "All About Eve",
+            "year": "1950",
+            "id": "tt0042192",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BOTM4ZjUzOGUtYzdlZi00ZmM5LTk5NTEtMjQxNDVmOTc5NWNlXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "The Kids Are All Right",
+            "year": "2010",
+            "id": "tt0842926",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjE4NTMwNDg5MF5BMl5BanBnXkFtZTcwNDY2ODE0Mw@@._V1_SX300.jpg"
+        },
+        {
+            "title": "All the President's Men",
+            "year": "1976",
+            "id": "tt0074119",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BZGQzMzcwMDYtMmNjNS00YzZlLTg2MjUtNTE0MThlNTFjMDQ0XkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "To All the Boys I've Loved Before",
+            "year": "2018",
+            "id": "tt3846674",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMjQ3NjM5MTAzN15BMl5BanBnXkFtZTgwODQzMDAwNjM@._V1_SX300.jpg"
+        },
+        {
+            "title": "The Sum of All Fears",
+            "year": "2002",
+            "id": "tt0164184",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMDcyNGIyYWQtZDI2OS00YTU3LTg3OTItMDM2ZTIzZmFkMGYwXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "Jingle All the Way",
+            "year": "1996",
+            "id": "tt0116705",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BNDgzMjQ0YTctZGJhNy00ZjJjLTk5YWMtZmI2YTgwOTJmYWJkXkEyXkFqcGc@._V1_SX300.jpg"
+        },
+        {
+            "title": "Run All Night",
+            "year": "2015",
+            "id": "tt2199571",
+            "Type": "movie",
+            "poster": "https://m.media-amazon.com/images/M/MV5BMTU2ODI3ODEyOV5BMl5BanBnXkFtZTgwMTM3NTQzNDE@._V1_SX300.jpg"
+        }
+    ],
+    "details": {
+        "title": "Everything Everywhere All at Once",
+        "year": "2022",
+        "rated": "R",
+        "released": "08 Apr 2022",
+        "runtime": "139 min",
+        "genre": "Action, Adventure, Comedy",
+        "director": "Daniel Kwan, Daniel Scheinert",
+        "writer": "Daniel Kwan, Daniel Scheinert",
+        "actors": "Michelle Yeoh, Stephanie Hsu, Jamie Lee Curtis",
+        "plot": "A middle-aged Chinese immigrant is swept up into an insane adventure in which she alone can save existence by exploring other universes and connecting with the lives she could have led.",
+        "language": "English, Mandarin, Cantonese",
+        "country": "United States",
+        "awards": "Won 7 Oscars. 411 wins & 394 nominations total",
+        "poster": "https://m.media-amazon.com/images/M/MV5BOWNmMzAzZmQtNDQ1NC00Nzk5LTkyMmUtNGI2N2NkOWM4MzEyXkEyXkFqcGc@._V1_SX300.jpg",
+        "ratings": [
+            {
+                "Source": "Internet Movie Database",
+                "Value": "7.8/10"
+            },
+            {
+                "Source": "Rotten Tomatoes",
+                "Value": "94%"
+            },
+            {
+                "Source": "Metacritic",
+                "Value": "81/100"
+            }
+        ],
+        "Metascore": "81",
+        "imdbRating": "7.8",
+        "imdbVotes": "565,023",
+        "imdbID": "tt6710474",
+        "type": "movie",
+        "DVD": "N/A",
+        "BoxOffice": "$77,191,785",
+        "Production": "N/A",
+        "Website": "N/A",
+        "Response": "True"
+    },
+    "timings":["7:00 AM","9:00 AM","11:00 AM","3:00 PM","6:00 PM","9:00 PM","11:00 PM"]
+}
