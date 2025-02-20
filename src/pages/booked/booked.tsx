@@ -48,12 +48,12 @@ const Booked = () => {
 
                     <button
                         onClick={() => downloadPDF(details?.seatLayout?.length, details?.title, details?.date, details?.time, details?.total, details?.seatLayout)}
-                        className='w-32 h-10 border border-neutral-600 rounded-lg mt-5'>
+                        className='w-32 h-10 border border-neutral-600 rounded-lg mt-5 curser-pointer hover:bg-neutral-600 hover:text-white'>
                         Download PDF
                     </button>
                     <button
                         onClick={() => navigate(routers.ROUTERS.HOME)}
-                        className='w-32 h-10 border border-neutral-600 rounded-lg mt-5'>
+                        className='w-32 h-10 border border-neutral-600 rounded-lg mt-5 curser-pointer hover:bg-neutral-600 hover:text-white'>
                         Go Home
                     </button>
                 </div>
