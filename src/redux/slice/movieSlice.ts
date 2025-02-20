@@ -40,9 +40,9 @@ const initialState: MovieState = {
 
 export const getMovieList = createAsyncThunk(
     "movies/getMovieList",
-    async (_, { rejectWithValue }) => {
+    async (title: string, { rejectWithValue }) => {
         try {
-            const response = await axios.get(`https://omdbapi.com/?apikey=${import.meta.env.VITE_OMDB_API_KEY}&s=all`, {
+            const response = await axios.get(`https://omdbapi.com/?apikey=${import.meta.env.VITE_OMDB_API_KEY}&s=${title}`, {
                 headers: {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
@@ -52,7 +52,7 @@ export const getMovieList = createAsyncThunk(
 
             return response.data;
 
-        } catch (error) {
+        } catch (error:any) {
             console.error('Error details:', error);
             return rejectWithValue(error.message || "Network error");
         }
@@ -72,7 +72,7 @@ export const getMovieDetails = createAsyncThunk(
             });
             return response.data;
 
-        } catch (error) {
+        } catch (error:any) {
             console.error('Error details:', error);
             return rejectWithValue(error.message || "Network error");
         }

@@ -4,10 +4,11 @@ import { useDispatch } from 'react-redux';
 import { setLayoutAndPrizing } from '../../redux/slice/bookingSlice';
 import { useNavigate } from 'react-router';
 import routers from '../../utils/common/routers';
+import { AppDispatch } from '../../redux/store/store';
 
 const SeatSelection: React.FC = () => {
     const navigate = useNavigate()
-    const dispatch = useDispatch()
+    const dispatch = useDispatch<AppDispatch>()
     const [selectedSeats, setSelectedSeats] = useState<string[]>([]);
     const [prizing, setPrizing] = useState({ silver: 0, gold: 0, platinum: 0 })
     const ROWS = 10;
@@ -34,7 +35,7 @@ const SeatSelection: React.FC = () => {
 
     }, [selectedSeats])
 
-    const getTierColor = (row) => {
+    const getTierColor = (row:number) => {
         if (row < 2) return 'bg-gray-200';
         if (row < 5) return 'bg-yellow-100';
         return 'bg-purple-100';
@@ -61,7 +62,7 @@ const SeatSelection: React.FC = () => {
 
     return (
         <Body>
-            <div className='p-10'>
+            <div className=''>
                 <div className='px-20 py-5 flex items-center justify-center gap-5'>
                     <div className='flex items-center'>
                         <div className='w-5 h-5 bg-gray-200'></div>
